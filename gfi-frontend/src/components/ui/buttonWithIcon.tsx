@@ -10,7 +10,7 @@ interface ButtonWithIconProps extends ButtonProps {
 export function ButtonWithIcon({path ,icon, children, ...props}: ButtonWithIconProps ) {
   return (
     
-    <Button {...props} variant="outline" size="sm">
+    <Button asChild {...props} variant="outline" size="sm">
         <Link href={path}>
            {icon} {children}
         </Link>

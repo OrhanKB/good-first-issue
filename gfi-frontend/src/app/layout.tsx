@@ -1,6 +1,6 @@
 import React from "react";
 import "../app/globals.css";
- import  Navbar  from "@/components/ui/shadcn-io/navbar-01/navbar";
+ import  Navbar  from "@/components/navbar";
 
 export default function RootLayout({
   children
