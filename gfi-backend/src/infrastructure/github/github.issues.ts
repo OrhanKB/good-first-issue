@@ -39,6 +39,7 @@ export interface MappedRepo {
 }
 
 const today = new Date();
+today.setDate(today.getDate() - 7); // Son 7 gün içindeki repoları almak için tarihi geriye çekiyoruz
 const year = today.getFullYear();
 const month = (today.getMonth() + 1).toString().padStart(2, "0");
 const day = today.getDate().toString().padStart(2, "0");

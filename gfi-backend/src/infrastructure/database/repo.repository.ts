@@ -57,6 +57,12 @@ export async function saveReposToDatabase(repos: MappedRepo[]) {
         }
         console.log("[BAŞARILI] issue sayı:", savedIssuesCount);
     };
+}
 
-
+export async function getAllRepos() {
+    return await prisma.repository.findMany({
+        include: {
+            issues: true
+        }
+    });
 }
